@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+Theme Name: template
+Theme URI: 
+Description: template
+Version: 
+Author: 
+Author 
+Tags: simple
+*/
+
+
+@charset "utf-8";
+
+@import "css/base.css";
+@import "css/common.css";
+@import "css/style.css";

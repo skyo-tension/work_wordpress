@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+@font-face{ 
+	font-family: 'notosansjp'; /* お好きな名前にしましょう */
+	src: url('../wf/notosansjp.eot'); /* IE9以上用 */
+	src: url('../wf/notosansjp.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+		url('../wf/notosansjp.woff') format('woff'), /* モダンブラウザ用 */
+		url('../wf/notosansjp.ttf') format('truetype'); /* iOS, Android用 */
+	font-weight: normal; /* 念の為指定しておきます */
+	font-style: normal;
+}
+@font-face{ 
+	font-family: 'notosansjp-bold'; /* お好きな名前にしましょう */
+	src: url('../wf/notosansjp-bold.eot'); /* IE9以上用 */
+	src: url('../wf/notosansjp-bold.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+		url('../wf/notosansjp-bold.woff') format('woff'), /* モダンブラウザ用 */
+		url('../wf/notosansjp-bold.ttf') format('truetype'); /* iOS, Android用 */
+	font-weight: normal; /* 念の為指定しておきます */
+	font-style: normal;
+}
+@font-face{ 
+	font-family: 'notosansjp-black'; /* お好きな名前にしましょう */
+	src: url('../wf/notosansjp-black.eot'); /* IE9以上用 */
+	src: url('../wf/notosansjp-black.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+		url('../wf/notosansjp-black.woff') format('woff'), /* モダンブラウザ用 */
+		url('../wf/notosansjp-black.ttf') format('truetype'); /* iOS, Android用 */
+	font-weight: normal; /* 念の為指定しておきます */
+	font-style: normal;
+}
+
+* {
+	margin: 0px; /* 各ブラウザの独自解釈をリセット*/
+	padding: 0px;	
+}
+
+
+html {
+	height: 100%;
+	position: relative;
+	margin-top: 0;
+}
+
+.sp{ display: none; }
+
+
+body {
+	font-size: 18px; /* 基本のフォントサイズ */
+	font-family: 'notosansjp'; 
+	line-height: 2;
+	height: 100%;
+	margin: 0;
+	padding: 0px;
+	background-color: #FFF;
+	color: #434343;
+	word-break: break-all;
+	-webkit-text-size-adjust: 100%;
+}
+
+img {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	vertical-align: bottom;
+}
+
+th {
+	padding: 10px;
+}
+td {
+	padding: 10px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+
+.indent {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.indent2 {
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+a .hover_img{}
+a:hover .hover_img{
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+.object-fit-img {
+  object-fit: cover;
+  font-family: 'object-fit: cover;'
+}
+
+
+/* リンク設定
+---------------------------------------------------- */
+a:link {
+	color: #434343;
+	text-decoration: none;
+}
+a:visited {
+	color: #434343;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #F66176;
+	text-decoration: none;
+}
+
+a.link:link {
+	color: #19519e;
+	text-decoration: none;
+}
+a.link:visited {
+	color: #19519e;
+	text-decoration: none;
+}
+a.link:hover {
+	color: #19519e;
+	text-decoration: underline;
+}
+
+
+/* 汎用CSS
+---------------------------------------------------- */
+.cf:before,.cf:after {content:"";display:table;}
+.cf:after {clear:both;}
+.cf {*zoom:1;}
+
+.bs {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+.nb {
+	border: none!important;
+}
+
+/* 固定
+---------------------------------------------------- */
+#wrapper {
+	height: auto;
+	width: 100%;
+	padding: 0px;
+	left: auto;
+	right: auto;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-color: #FFFFFF;
+}
+
+
+/* h
+---------------------------------------------------- */
+h1 {
+	width:auto;
+	height:auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+@media only screen and (max-width: 740px) {
+
+body {
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.sp{ display: block; }
+.pc{ display: none!important; }
+
+
+}
