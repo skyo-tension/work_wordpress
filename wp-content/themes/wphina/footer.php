@@ -1,7 +1,7 @@
 		<!-- footer -->
 		<footer>
 			<div class="contents">
-				<img src="<?php bloginfo('template_directory');?>/images/common/footer_logo.png" alt="dinomo">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/common/footer_logo.png" alt="dinomo">
 				<ul class="menu01 cf">
 					<li><a href="<?php echo home_url(); ?>/campaign/">キャンペーン</a></li>
 					<li><a href="<?php echo home_url(); ?>/price/">料金プラン</a></li>

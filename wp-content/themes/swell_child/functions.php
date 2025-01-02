@@ -149,5 +149,6 @@ add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style( 'child_style', get_stylesheet_directory_uri() .'/style.css', [], $query );
 
     /* その他の読み込みファイルはこの下に記述 */
+    wp_enqueue_style( 'child-custom-style', get_stylesheet_directory_uri() . '/custom.css', [], $query );
 
 }, 11);
